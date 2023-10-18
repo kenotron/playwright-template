@@ -2,7 +2,7 @@ import "dotenv/config";
 
 import { test as setup } from "@playwright/test";
 import { execSync } from "child_process";
-import { generateTestDatabaseUrl } from "~/db/generate-test-url";
+import { generateTestDatabaseUrl } from "~/generate-test-url";
 
 setup("db setup", async ({ page }) => {
   const prismaBinary = require.resolve("prisma/build/index.js");

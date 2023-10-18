@@ -1,5 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 import "dotenv/config";
+import { generateTestDatabaseUrl } from "~/generate-test-url";
 
 /**
  * Read environment variables from file.

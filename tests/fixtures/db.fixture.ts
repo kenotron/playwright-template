@@ -1,6 +1,6 @@
 import { test as base, expect } from "@playwright/test";
 import { PrismaClient } from "@prisma/client";
-import { generateTestDatabaseUrl } from "~/db/generate-test-url";
+import { generateTestDatabaseUrl } from "~/generate-test-url";
 
 export interface DBFixtures {
   prisma: PrismaClient;
